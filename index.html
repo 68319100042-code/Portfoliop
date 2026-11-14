@@ -1,0 +1,328 @@
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Our Portfolio | Two People</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Mali:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Mali', sans-serif;
+    background: linear-gradient(135deg, #fff0f6, #e5f5ff, #fceafa);
+    color: #657b99;
+    padding: 30px 15px;
+    line-height: 1.8;
+}
+
+.container {
+    max-width: 1050px;
+    margin: auto;
+}
+
+header {
+    text-align: center;
+    padding: 35px 15px;
+}
+
+header h1 {
+    color: #e58bb6;
+    font-size: 35px;
+    text-shadow: 2px 2px 0 white;
+}
+
+header p {
+    color: #80b8dc;
+    font-size: 15px;
+}
+
+/* รูปภาพสองคน */
+.people {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    max-width: 750px;
+    margin: 0 auto 35px;
+}
+
+.person {
+    background: white;
+    padding: 15px;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 8px 25px #c9dbea80;
+    border: 3px solid white;
+}
+
+.person img {
+    width: 100%;
+    height: 390px;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 18px;
+    border: 4px solid #f7cce0;
+}
+
+.person:nth-child(2) img {
+    border-color: #bce5fa;
+}
+
+.person h2 {
+    color: #df80ac;
+    font-size: 19px;
+    margin-top: 12px;
+}
+
+.person:nth-child(2) h2 {
+    color: #70aeda;
+}
+
+/* หัวข้อ */
+.section-title {
+    text-align: center;
+    color: #df85b2;
+    font-size: 25px;
+    margin: 30px 0 20px;
+}
+
+/* กล่องข้อมูล */
+.card {
+    background: rgba(255,255,255,0.9);
+    border-radius: 22px;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-left: 6px solid #f4b9d5;
+    box-shadow: 0 5px 20px #cbddeb55;
+}
+
+.card h3 {
+    color: #df80ad;
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 15px;
+    color: #667b96;
+    text-align: justify;
+}
+
+/* ประวัติส่วนตัว */
+.info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.info-item {
+    background: #fff0f6;
+    padding: 12px 15px;
+    border-radius: 14px;
+    font-size: 14px;
+}
+
+.info-item:nth-child(even) {
+    background: #eaf6ff;
+}
+
+.info strong {
+    color: #d77fa8;
+}
+
+/* คติประจำใจ */
+.motto {
+    text-align: center;
+    background: linear-gradient(120deg, #fbd8e9, #d9efff);
+    padding: 30px 20px;
+    border-radius: 25px;
+    margin-top: 25px;
+    color: #778eaf;
+}
+
+.motto h3 {
+    color: #d97eaa;
+    margin-bottom: 10px;
+}
+
+.motto p {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+footer {
+    text-align: center;
+    padding: 30px 10px;
+    color: #b58caf;
+    font-size: 13px;
+}
+
+/* มือถือ */
+@media (max-width: 600px) {
+    body {
+        padding: 15px 10px;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    .people {
+        gap: 10px;
+    }
+
+    .person {
+        padding: 8px;
+    }
+
+    .person img {
+        height: 230px;
+    }
+
+    .person h2 {
+        font-size: 13px;
+    }
+
+    .info {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        padding: 18px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<header>
+    <h1>♡ OUR PORTFOLIO ♡</h1>
+    <p>Two People • Two Dreams • One Future</p>
+</header>
+
+<!-- รูปภาพและชื่อ 2 คน -->
+<div class="people">
+
+    <!-- รูปคนที่ 1 -->
+    <div class="person">
+        <img src="person1.jpg" alt="กัญญานัฐ บูรพา">
+        <h2>นางสาวกัญญานัฐ บูรพา</h2>
+    </div>
+
+    <!-- รูปคนที่ 2 -->
+    <div class="person">
+        <img src="person2.jpg" alt="ภัทรจาริน สัมฤทธิ์">
+        <h2>ภัทรจาริน สัมฤทธิ์</h2>
+    </div>
+
+</div>
+
+<!-- ประวัติส่วนตัว -->
+<h2 class="section-title">♡ ประวัติส่วนตัว ♡</h2>
+
+<div class="card">
+    <div class="info">
+
+        <div class="info-item">
+            <strong>ชื่อ-นามสกุล:</strong><br>
+            นางสาวกัญญานัฐ บูรพา
+        </div>
+
+        <div class="info-item">
+            <strong>ชื่อเล่น:</strong><br>
+            ลูกแมว
+        </div>
+
+        <div class="info-item">
+            <strong>สถานศึกษา:</strong><br>
+            โรงเรียนทุ่งใหญ่เฉลิมราชอนุสร์รัชมังคลาภิเษก
+        </div>
+
+        <div class="info-item">
+            <strong>ระดับการศึกษา:</strong><br>
+            มัธยมศึกษาปีที่ 6
+        </div>
+
+        <div class="info-item">
+            <strong>แผนการเรียน:</strong><br>
+            วิทยาศาสตร์-คณิตศาสตร์
+        </div>
+
+        <div class="info-item">
+            <strong>ความสนใจ:</strong><br>
+            นักสาธารณสุขและการดูแลสุขภาพ
+        </div>
+
+    </div>
+</div>
+
+<!-- กิจกรรม -->
+<h2 class="section-title">♡ กิจกรรมและประสบการณ์ ♡</h2>
+
+<div class="card">
+    <h3>🏥 การฝึกประสบการณ์ในโรงพยาบาล</h3>
+    <p>
+    ได้เรียนรู้การทำงานภายในโรงพยาบาล ฝึกทักษะการดูแลผู้ป่วยเบื้องต้น
+    การเตรียมยา และสังเกตการปฏิบัติงานของบุคลากรทางการแพทย์
+    ทำให้ได้รับประสบการณ์และเข้าใจบทบาทหน้าที่ของบุคลากรด้านสุขภาพมากยิ่งขึ้น
+    </p>
+</div>
+
+<div class="card">
+    <h3>💗 กิจกรรมด้านอาสา</h3>
+    <p>
+    เข้าร่วมกิจกรรมจิตอาสาเพื่อช่วยเหลือสังคมและชุมชน เช่น การพัฒนาวัด
+    ทำความสะอาดสถานที่ และแบ่งปันสิ่งของให้ผู้อื่น
+    ทำให้ได้ฝึกความเสียสละ ความมีน้ำใจ และการทำงานร่วมกับผู้อื่น
+    </p>
+</div>
+
+<div class="card">
+    <h3>📚 กิจกรรมและผลงานทางวิชาการ</h3>
+    <p>
+    เข้าร่วมกิจกรรมและการแข่งขันทางวิชาการเพื่อพัฒนาความรู้
+    ความสามารถ และทักษะต่าง ๆ ได้เรียนรู้สิ่งใหม่ ๆ
+    ฝึกการคิดวิเคราะห์ การแก้ไขปัญหา และกล้าแสดงออกมากยิ่งขึ้น
+    </p>
+</div>
+
+<!-- เป้าหมาย -->
+<h2 class="section-title">♡ เป้าหมายในอนาคต ♡</h2>
+
+<div class="card">
+    <p>
+    เป้าหมายที่จะศึกษาต่อในสาขาสาธารณสุขศาสตร์ และมุ่งมั่นพัฒนาตนเอง
+    ให้เป็นนักสาธารณสุขที่มีความรู้ ความสามารถ มีจิตใจรักการบริการ
+    พร้อมนำความรู้ไปดูแล ส่งเสริมสุขภาพ และพัฒนาคุณภาพชีวิตของประชาชน
+    ในชุมชนให้ดียิ่งขึ้น
+    </p>
+</div>
+
+<!-- คติประจำใจ -->
+<div class="motto">
+    <h3>♡ คติประจำใจ ♡</h3>
+    <p>
+    “ความสำเร็จไม่ได้เกิดจากการรอคอย
+    แต่เกิดจากความพยายามและการลงมือทำ”
+    </p>
+</div>
+
+<footer>
+    ♡ THANK YOU FOR VISITING OUR PORTFOLIO ♡
+</footer>
+
+</div>
+
+</body>
+</html>
